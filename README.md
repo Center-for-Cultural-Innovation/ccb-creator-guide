@@ -1,6 +1,9 @@
 # ccb-creator-guide
 A guide for creators to navigate the Copyright Claims Board
 
+This guide is a web adaptation of written materials prepared for and by the Center for Cultural Innovation. These materials are derived from the written guide, Navigating the Copyright Claims Board: A practical guide for creators and is protected by copyright.
+
+---
 
 ## Getting started
 To download this repository locally, you'll need copy it locally:
