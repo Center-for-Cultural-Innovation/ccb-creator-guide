@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navigating the Copyright Claims Board | Center for Cultural Innovation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+	<link id="favicon" rel="shortcut icon" type="image/png" href="assets/favicon.svg" />
+
+	<script src="js/expand-collapse.js"></script>
+	<script src="js/decision-tree.js"></script>
+</head>
+
+<body class="light-blue">
+
+	<div id="header">
+		<div id="header-decision-tree"><a href="index.html">← Back to Guide</a></div>
+		<div><strong>Interactive Walkthrough</strong></div>
+		<div id="header-legal-disclaimer" title="This guide is for informational purposes only and does not constitute legal advice. Its purpose is to provide a general description of CCB and its proceedings, but each factual situation is unique and requires individual consideration. Therefore, please do not act on this legal information as legal guidance; if you have any specific legal problems, issues, or questions, seek review of your situation with a lawyer licensed to practice in your jurisdiction.">Legal Disclaimer</div>
+	</div>
+
+	<div id="page-layout">
+		<div id="decision-tree-nav">
+			<div class="nav-label">Your responses so far:</div>
+			<br>
+			<!-- This will automatically populate based on the title ("dt-h2") defined for each question, and the answer the user selects when they click on a button ("dt-button"). This is managed by js/decision-tree.js. -->
+			
+		</div>
+			
+
+		<div id="content">
+			<div class="outline-button" id="restart"><a>↩︎ Start Over</a></div>
+
+			<div class="dt-section" id="q0">
+				<div class="dt-h2">Let's work through the process together</div class="dt-h2">
+
+				<div id="legal-disclaimer" class="box">
+					⚠️ This is not legal advice. Each factual situation is unique and requires individual consideration - if you have any specific legal problems, issues, or questions, seek review of your situation with a lawyer licensed to practice in your jurisdiction and read more about the CCB.
+				</div>
+
+				<p>Different claimants may choose different paths, depending on what their situations, claims, preferences, and goals are. This quiz will take you through different questions you might encounter while navigating the CCB's process.<br></p>
+
+				<p>Each question and answer you choose will be summarized on the left panel.</p>
+
+				<p>The CCB also provides <a href="https://ccb.gov/handbook/">its own handbook</a>, offering guidance and information about each step of the process.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button" id="begin-decision-tree" data-next-question="q1-eligibility">✨ Let's get started →</div>
+				</div>
+			</div>
+
+
+
+			<div class="dt-section" id="q1-eligibility">
+				<div class="dt-h2">Do you meet the basic eligibility requirements to bring a claim to the CCB?</div class="dt-h2">
+
+				<p>Before deciding which path might be best for you to get relief on a potential claim, let's see if the CCB could even be a viable option for you. Read more <a href="https://ccb.gov/handbook/Introduction.pdf">about the CCB here</a> to learn more.</p></p>
+
+				<ul class="checkbox-list">
+					<li><input type="checkbox" checked>You and your respondent live in the United States.</li>
+					<li><input type="checkbox" checked>The statute of limitations has not expired.<br>
+						<span class="gray">In other words, you are bringing your claim within three years of when the respondent's conduct began.</span>
+					 </li>
+					<li><input type="checkbox" checked>You have filed 30+ claims with the CCB in the last 12 months.</li>
+					<li><input type="checkbox" checked>The CCB or any court has not already reached a final decision on this claim, or the claim is currently pending before a court.<br>
+						<span class="gray">If you have previously filed this claim with the CCB, it has not been dismissed with prejudice or reached a final determination before it was closed. You also cannot file a claim if you received a final judgment on the same claim in a federal court.</span></li>
+				</ul>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q2-eligibility">✅ I meet all of these requirements</div>
+					<div class="dt-button full-width"  data-next-question="q1-dead-end">❌ I do not meet all of these requirements</div>
+				</div>
+			</div>
+
+
+			<div class="dt-section" id="q1-dead-end">
+				<div class="dt-h2">🛑 The CCB might not be right for you.</div class="dt-h2">
+
+				<p>If you do not meet these core requirements, you may not be able to bring this case to the CCB. While some issues can be fixed (e.g. you wait until your quota for claims with the CCB resets), many of these cannot be changed (e.g. your statute of limitations has run out). Read more <a href="https://ccb.gov/handbook/Introduction.pdf">about the CCB here</a> to learn more.</p></p>
+				<p>You may want to look more into whether another venue like federal court might be right for you instead.</p>
+				<p>If your issue involves something like misrepresentation or infringement, you may also consider working with internet service providers like Spotify, Etsy, Instragram, YouTube, etc. to correct any issues with their own processes.</p>
+			</div>
+
+
+
+
+			<div class="dt-section" id="q2-eligibility">
+				<div class="dt-h2">Is your claim something the CCB has the authority to govern?</div class="dt-h2">
+
+				<p>The CCB can only hear the following kinds of claims:</p>
+				<ul>
+					<li>infringement</li>
+					<li>noninfringement</li>
+					<li>misrepresentation</li>
+				</ul>
+
+				<p>If your dispute is about a contractual disagreement (e.g. you licensed your content to someone else based on a contract that you believe was violated), this might be out of the CCB's jurisdiction. Learn more about <a href="https://ccb.gov/handbook/Unsuitability.pdf">Unsuitability here</a>.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q3-claim-type">✅ The CCB has jurisdiction</div>
+					<div class="dt-button full-width"  data-next-question="q2-dead-end">❌ The CCB does not have jurisdiction</div>
+				</div>
+			</div>
+
+
+
+			<div class="dt-section" id="q2-dead-end">
+				<div class="dt-h2">🛑 The CCB might not be right for you.</div class="dt-h2">
+
+				<p>The CCB has limited authority to govern over only specific copyright cases. Read more <a href="https://ccb.gov/handbook/Introduction.pdf">about the CCB here</a>, to learn more.</p>
+				<p>You may want to look more into whether another venue like federal court might be right for you instead. One common reason cases do not survive in the CCB's compliance review process (when the officers review your claim after it is filed) is that they are not actually copyright disputes. If a case is fundamentally about a dispute on whether a contract was breached (e.g. a contract involving the licensing of copyrighted materials), that actually would not be within the CCB's jurisdiction. This is the kind of case you might instead consider bringing to a federal court.</p>
+			</div>
+
+
+
+
+			<div class="dt-section" id="q3-claim-type">
+				<div class="dt-h2">What kind of claim are you pursuing?</div class="dt-h2">
+
+				<p>As a reminder, the CCB only oversees these three types of claims:</p>
+				<ul>
+					<li><strong>Infringement: </strong>
+						You may have an infringement claim if you believe that someone used your original and protected work. To bring a CCB infringement claim, you must (1) have a registered copyright for your work, (2) maintain exclusive rights over the work, and (3) someone else attempted to use your exclusive rights without your permission.
+					</li>
+					<li><strong>Noninfringement: </strong>
+						These claims are relevant if someone accuses you of unlawfully using or intending to use their protected work without permission. A noninfringement claim can give you a declaration from the CCB that your conduct is not (nor will be) copyright infringement. You do not need a registered copyright to bring a noninfringement claim.
+					</li>
+					<li><strong>Misrepresentation: </strong>
+						If “you believe the respondent said something false in a takedown notice or counter-notice to an online service provider, and this resulted in the online service provider taking content offline or putting it back online,” then you have a misrepresentation claim.
+					</li>
+				</ul>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q4-infringement">Infringement</div>
+					<div class="dt-button full-width"  data-next-question="q4-noninfringement-elements">Noninfringement</div>
+					<div class="dt-button full-width"  data-next-question="q4-misrepresentation-elements">Misrepresentation</div>
+				</div>
+			</div>
+
+
+			<div class="dt-section" id="q4-infringement">
+				<div class="dt-h2">Do you have a registered (or registration-pending) copyright?</div class="dt-h2">
+
+				<p>You can only pursue infringement claims for copyrights that are registered or pending-registration.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q5-infringement-elements">✅ Yes, I have a registered/pending copyright</div>
+					<div class="dt-button full-width"  data-next-question="q4-dead-end">❌ No, I have not attempted to register my copyright</div>
+				</div>
+			</div>
+
+
+			<div class="dt-section" id="q4-dead-end">
+				<div class="dt-h2">🛑 You can only continue if you register your work (within one month of becoming aware of infringement).</div class="dt-h2">
+				<p>Learn more about <a href="https://www.copyright.gov/help/faq/faq-prereg.html#:~:text=To%20preserve%20the%20legal%20benefits,three%20months%20after%20first%20publication.">registration here</a>.</p>
+			</div>
+
+
+
+			<div class="dt-section" id="q4-noninfringement-elements">
+				<div class="dt-h2">Can you build a strong case meeting the required legal elements?</div class="dt-h2">
+
+				<p>Noninfringement claims require a showing of the following:</p>
+				<ul>
+					<li>The respondent told you that your activities were, are or will be infringing.</li>
+					<li>The respondent filed for a takedown of your content from an online service provider.</li>
+					<li>The respondent’s accusations have interfered with your activities.</li>
+					<li>The respondent told someone else that your activities constituted infringement.</li>
+				</ul>
+
+				<p>Learn more about Noninfringement Claims with the <a href="https://ccb.gov/handbook/NonInfringement-Claim.pdf">CCB's handbook chapter</a> on building these claims specifically.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q6-compliance-review">✅ Yes, I can prove I meet these elements</div>
+					<div class="dt-button full-width"  data-next-question="q5-dead-end">❌ No, I cannot make a strong showing</div>
+				</div>
+			</div>
+
+
+
+			<div class="dt-section" id="q4-misrepresentation-elements">
+				<div class="dt-h2">Can you build a strong case meeting the required legal elements?</div class="dt-h2">
+
+				<p>Misrepresentation claims require a showing of the following:</p>
+				<ul>
+					<li>The respondent sent an online service provider either: a takedown notice claiming that your online content or activity is infringing or a counter-notice refuting infringement claims or claiming that the content was removed mistakenly.</li>
+					<li>The respondent made a misrepresentation, a false or incorrect factual statement, in the takedown notice or counter-notice.</li>
+					<li>The respondent knew that the misrepresentation was false.</li>
+					<li>The misrepresentation was important to the online service provider’s decision to take down or repost the content.</li>
+					<li>The online service provider relied on the misrepresentation.</li>
+					<li>You were harmed because of it.</li>
+				</ul>
+
+				<p>Learn more about Misrepresentation Claims with the <a href="https://ccb.gov/handbook/Misrepresentation-Claim.pdf">CCB's handbook chapter</a> on building these claims specifically.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q6-compliance-review">✅ Yes, I can prove I meet these elements</div>
+					<div class="dt-button full-width"  data-next-question="q5-dead-end">❌ No, I cannot make a strong showing</div>
+				</div>
+			</div>
+
+
+			<div class="dt-section" id="q5-infringement-elements">
+				<div class="dt-h2">Can you build a strong case meeting the required legal elements?</div class="dt-h2">
+
+				<p>Infringement claims require a showing of the following:</p>
+				<ul>
+					<li>You must have ownership of a valid copyright. Your work must be registered or pending registration.</li>
+					<li>You must have exclusive license over at least one right in the work: the right to make copies, the right to prepare other works using this work (“derivative works”), the right to distribute, the right to make copies, the right to publicly perform the work, the right to publicly display the work.</li>
+					<li>The respondent used one of your exclusive rights without your permission, and they had an opportunity to be exposed to your work. Their work is also substantially like original elements of expression in your work.</li>
+				</ul>
+
+				<p>Learn more about Infringement Claims with the <a href="https://ccb.gov/handbook/Infringement-Claim.pdf">CCB's handbook chapter</a> on building these claims specifically.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q6-compliance-review">✅ Yes, I can prove I meet these elements</div>
+					<div class="dt-button full-width"  data-next-question="q5-dead-end">❌ No, I cannot make a strong showing</div>
+				</div>
+			</div>			
+
+
+			<div class="dt-section" id="q5-dead-end">
+				<div class="dt-h2">🛑 Without making a strong showing that you can meet these elements, your claim is unlikely to succeed.</div class="dt-h2">
+
+				<p>When you file a claim, it is in your best interest to show that you are able to prove each of these elements. While you may not have all of the evidence you need to do this, you may want to provide the information and documents you do have to strengthen your claim. Every situation is different, of course, so we recommend you visit the CCB's handbook chapters on building claims to learn more.</p>
+			</div>			
+
+
+			<div class="dt-section" id="q6-compliance-review">
+				<div class="dt-h2">Does your claim survive compliance review?</div class="dt-h2">
+
+				<div class="callout box">Note: Between June 16, 2022 to February 6, 2024, only 334 of the 721 total claims filed were given the green light to continue.</div>
+
+				<p>After your file your claim and pay your first filing fee ($40), the CCB will review it. As noted above, many claims do not make it past this review process. Claims that are not fundamentally about copyright law issues or claims that are <a href="https://ccb.gov/handbook/Unsuitability.pdf">not eligible</a> do not continue.</p>
+
+				<p><strong>What happens if your claim doesn't succeed on the first try?</strong>If the issue that came up is something that can be corrected, for example you needed to provide more information about something in your claim, the CCB provides two chances to make corrections (called "amendments"). These have deadlines, so you will need to submit a timely response.</p>
+
+				<p>Learn more about Compliance Review with the <a href="https://ccb.gov/handbook/Compliance.pdf">CCB's Compliance handbook chapter</a>.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q7-service">✅ Yes, my claim survives compliance review</div>
+					<div class="dt-button full-width"  data-next-question="q6-dead-end">❌ No, my claim does not survive </div>
+				</div>
+			</div>		
+
+			<div class="dt-section" id="q6-dead-end">
+				<div class="dt-h2">🛑 If you do not pass compliance after your opportunities to amend have run out, your claim ends here.</div class="dt-h2">
+
+				<p>Learn more about Compliance Review with the <a href="https://ccb.gov/handbook/Compliance.pdf">CCB's Compliance handbook chapter</a> and about <a href="https://ccb.gov/handbook/Unsuitability.pdf">Unsuitability here</a>.</p>
+			</div>		
+
+
+			<div class="dt-section" id="q7-service">
+				<div class="dt-h2">Do you complete service of the claim?</div class="dt-h2">
+
+				<div class="callout box">Note: Between June 16, 2022 to February 6, 2024, only 361 parties filed a valid proof service from the 721 total claims initially filed.</div>
+
+				<p>The CCB will provide you with a packet of information you must present to the respondent. This process is called service. You cannot include any other materials when sending this packet — a proper service packet includes an initial notice, the claim, and the opt-out form. You can also give your respondent the option to waive service. If the respondent agrees to waive, you do not need to serve them.</p>
+
+				<p>Service can be challenging in the filing process because each state has its own service rules. How service is accomplished will depend “on who the respondent is, where they are located, and whether they have a designated service agent.” The CCB advises that some claimants may want to consider hiring a process server who can sign a form confirming the service of the process. You can issue service by the CCB’s designated methods or serve based on the applicable state law where the respondent lives. Importantly, you cannot serve the respondent yourself. A general rule to keep in mind is that if you are serving in person, you may not be the one to personally serve the documents. </p>
+				
+				<p>Once you serve the respondent, you will need to share evidence of service with the CCB within seven days of service. You have 90 days to issue service and file proof of service.</p>
+
+				<p>Learn more about Service from the <a href="https://ccb.gov/handbook/Service.pdf">CCB's handbook</a>.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q8-opt-out">✅ Yes, I complete service</div>
+					<div class="dt-button full-width"  data-next-question="q7-dead-end">❌ No, I do not complete service</div>
+				</div>
+			</div>	
+
+
+			<div class="dt-section" id="q7-dead-end">
+				<div class="dt-h2">🛑 Unless the respondent waives service, you cannot continue without completing service.</div class="dt-h2">
+
+				<p>Learn more about Service with the <a href="https://ccb.gov/handbook/Service.pdf">CCB's handbook chapter</a>.</p>
+			</div>
+
+
+			<div class="dt-section" id="q8-opt-out">
+				<div class="dt-h2">Does the respondent opt-out of the process?</div class="dt-h2">
+
+				<div class="callout box">Note: Between June 16, 2022 to February 6, 2024, 75 respondents opted out. 109 claimants paid their second filing fee, reaching active phase.</div>
+
+				<p>Something unique about the CCB is that respondents can choose not to participate in the process. If a respondent does not respond at all when they are given service, they are automatically opted-in to the proceedings by default. But, if a respondent does choose to opt-out, that marks the end of the claim.</p>
+
+				<p>Respondents might opt-in by default by not responding, or they may choose to participate in the CCB's process because here, there are limits on damages and the proceedings are more streamlined. But some respondents may prefer to opt-out, instead. If the respondent opts in, you will need to submit a second payment of $60 to the CCB to push your case into "active phase."</p>
+				
+				<p>If a respondent opts out, that doesn't mean you have no recourse. You can try to reach a settlement with the respondent, or you can still bring your claim to federal court where there is not choice to opt out. This may be a more difficult path for claimants (it's harder to navigate, may be much harder without an attorney, and is more drawn out), but may lead to more damages if you believe the respondent willfully infringed on your copyrighted materials.</p>
+
+				<p>For more on opting-out, read the <a href="https://ccb.gov/handbook/Opting-Out.pdf">CCB's handbook</a>.</p>
+
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q9-proceedings">✅ Your case moves to "active phase"</div>
+					<div class="dt-button full-width"  data-next-question="q8-dead-end">❌ The respondent opts-out</div>
+				</div>
+			</div>	
+
+			<div class="dt-section" id="q8-dead-end">
+				<div class="dt-h2">🛑 Your CCB claim ends here, but you may have other avenues to explore.</div class="dt-h2">
+
+				<p>As we mentioned before, if a respondent opts out, that doesn't mean you have no recourse. You can try to reach a settlement with the respondent, or you can still bring your claim to federal court where there is not choice to opt out. This may be a more difficult path for claimants (it's harder to navigate, may be much harder without an attorney, and is more drawn out), but may lead to more damages if you believe the respondent willfully infringed on your copyrighted materials.</p>
+
+				<p>Read more on <a href="https://ccb.gov/handbook/Opting-Out.pdf">opting-out here</a>.</p>
+			</div>
+
+
+			<div class="dt-section" id="q9-proceedings">
+				<div class="dt-h2">What comes next?</div class="dt-h2">
+
+				<div class="callout box">Note: Between June 16, 2022 to February 6, 2024, only 12 claims reached a final determination from the CCB (109 claimants total reached the active phase).</div>
+
+				<p>Once active, the CCB will issue an order directing you, the claimant, to pay a second filing fee of $60 on eCCB within fourteen days. Your proceeding will be delayed if you don’t submit the second filing fee on time.</p>
+
+				<p>Next, the CCB will issue a Scheduling Order. It will include key dates and deadlines for each stage of this active phase. The respondent will explain their positions by filing a response and any counterclaims.</p>
+
+				<p><strong>Prediscovery</strong> • You and your Copyright Claims Officer will meet in a virtual conference to discuss the process of presenting your case. The officer is one of the three officers who make up the CCB tribunal. Once again, they have deep experience in copyright law. They will hold a virtual conference with you and the respondent to discuss the proceeding, how the steps of the proceeding will work, and whether or not you are interested in settling.</p>
+
+				<p><strong>Discovery</strong> • After your pre-discovery conference, you will enter discovery. During this period, the parties exchange information and documents relevant to the claim. Once the discovery period ends, a Copyright Claims Officer holds another virtual conference to discuss the process of presenting your case to the CCB. They may again discuss whether you are interested settling.</p>
+
+				<p><strong>Hearings</strong> • If you and the respondent decide you don’t want to settle, you will present your case in a remote digital hearing in the form of a) a written position statement describing why you think you should win, b) a statement from any witnesses, and c) documentary evidence.</p>
+
+
+				<p>For more on proceedings, read Chapters 10-18 of the <a href="https://ccb.gov/handbook">CCB's handbook</a>.</p>
+				<div class="dt-options row">
+					<div class="dt-button full-width"  data-next-question="q10-final-determination">✅ Your claim continues</div>
+					<div class="dt-button full-width"  data-next-question="q10-settlement">💸 You agree on a settlement</div>
+					<div class="dt-button full-width"  data-next-question="q10-dismissal">❌ You voluntarily dismiss the case</div>
+				</div>
+
+			</div>				
+
+			<div class="dt-section" id="q10-final-determination">
+				<div class="dt-h2">👩🏽‍⚖️ Your claim reaches a final determination!</div class="dt-h2">
+
+				<div class="callout box">Note: Between June 16, 2022 to February 6, 2024, only 12 claims reached a final determination from the CCB.</div>
+
+				<p>If you've gotten this far, your claim may reach a final determination! This does not happen often - many parties may drop out of the process because they independently reached a settlement. This may not be reflected in the data about the CCB - sometimes, claimants voluntarily dismiss their own cases or stop responding within the required deadlines because they and the respondent have made agreements outside of the CCB's process. This isn't necessarily a bad thing -- settlements can be a way of achieving your desired outcome without leveraging the CCB or federal courts.</p>
+
+				<p>Final determinations are legally "final" -- they are official decisions, that have legal effect. But if you disagree with these decisions and want someone to review them, you can file for review. The CCB must grant your request for review, so this is not guaranteed.</p>
+
+				<p>Read more on <a href="https://ccb.gov/handbook/Final-Determination.pdf">final determinations here</a>.</p>
+			</div>
+
+
+			<div class="dt-section" id="q10-settlement">
+				<div class="dt-h2">While your CCB claim ends here, you may have reached the outcome you wanted.</div class="dt-h2">
+
+				<p>While some respondents and claimants resolve their disputes on their own, sometimes the CCB facilitates settlements among parties too.</p>
+
+				<p>Read more on <a href="https://ccb.gov/handbook/Settlement.pdf">settlement here</a>.</p>
+			</div>
+
+
+			<div class="dt-section" id="q10-dismissal">
+				<div class="dt-h2">🛑 Your claim ends here.</div class="dt-h2">
+
+				<p>Sometimes, claimants may choose to dismiss their own claims to resolve their disputes with respondents outside of the CCB's proceedings. This may be a more efficient way at resolving your dispute, depending on what you are seeking and how cooperative the other party is.</p>
+			</div>
+
+		</div>
+	</div>
+</body>
