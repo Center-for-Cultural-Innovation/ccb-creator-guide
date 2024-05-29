@@ -2,6 +2,9 @@
 $(function() {
 
 
+	$("#enter-guide").click(function(){
+		$(".welcome-dialog").fadeOut();
+	})
 
 	$("#page-layout").scroll(function(){
 	   console.log('Event Fired');

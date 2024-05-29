@@ -11,6 +11,121 @@ body {
 }
 
 
+
+/**************/
+/* WELCOME */
+/**************/
+
+#welcome {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -350px;
+  margin-top: -300px;
+  background-color: white;
+  width: 600px;
+  height: 500px;
+  z-index: 200;
+  border-radius: 5px;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+  padding: 50px;
+}
+
+#overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 199;
+}
+
+.welcome-title-1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.welcome-title-2{
+  font-size: 64px;
+  font-weight: 800;
+  line-height:95%;
+  margin-bottom: 30px;
+}
+
+.welcome-subtitle{
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.welcome-rounded-text{
+  border-radius: 500px;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 15px;
+  font-size: 12px;
+  width: fit-content;
+  max-width: 450px;
+  margin-bottom: 10px;
+}
+
+.welcome-authors {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#cover-art {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 500px;
+  width: auto;
+}
+
+.primary-button {
+  border-radius: 3px;
+  background-color: #134EEA;
+  transition: background-color 0.25s ease-out;
+  border: 1px solid #134EEA;
+  color: white;
+  padding: 10px 8px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 16px;
+}
+
+.primary-button:hover{
+  background: #0034bf;
+  color: white;
+}
+
+
+.secondary-button {
+  border-radius: 3px;
+/*  background-color: #134EEA;*/
+  transition: background-color 0.25s ease-out;
+  border: 1px solid #134EEA;
+  color: #134EEA;
+  padding: 10px 8px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 16px;
+}
+
+.secondary-button:hover{
+  background-color: rgba(19, 78, 234, 0.20);
+  color: white;
+}
+
+.secondary-button > a {
+  text-decoration: none;
+}
+
 /**************/
 /* PAGE */
 /**************/
@@ -23,7 +138,7 @@ a:visited {
     margin-top: -20px;
     padding: 8px;
     position: absolute;
-    z-index: 9999;
+    z-index: 100;
     max-width: 300px;
     font-size: 12px;
     transform: translateY(-30px);
@@ -46,7 +161,7 @@ a:visited {
   display: flex;
   background-color: white;
   width: 84vw;
-  z-index: 99;
+  z-index: 90;
   justify-content: space-between;
   align-items: center;
 }
@@ -59,7 +174,7 @@ a:visited {
   background-color: #134EEA;
   color: white;
   width: 84vw;
-  z-index: 99;
+  z-index: 90;
   justify-content: space-between;
   align-items: center;
 }
@@ -199,6 +314,14 @@ img {
   color: gray;
 }
 
+.indented {
+  margin-left: 20px;
+}
+
+.signature {
+  margin-left: 50%;
+}
+
 li {
   margin: 10px 0;
   line-height: 100%;
@@ -229,7 +352,7 @@ li {
 }
 
 .navigation-button {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   padding: 4px;
   padding-right: 15px;
   margin-right: 10px;
@@ -530,7 +653,7 @@ img {
   color: white;
 }
 
-.dt-button:hover{
+.dt-button:hover {
   background: #0034bf;
   color: white;
 }

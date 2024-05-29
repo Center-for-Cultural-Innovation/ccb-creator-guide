@@ -9,19 +9,38 @@
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500; 1,900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
 	<link id="favicon" rel="shortcut icon" type="image/png" href="assets/favicon.svg" />
 
 	<script src="js/expand-collapse.js"></script>
-
-	<!-- <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script> -->
-	<!-- <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script> -->
 </head>
 
 <body>
+
+
+	<div id="welcome" class="welcome-dialog">
+		<img id="cover-art" src="assets/Cover-Art.png" />
+		<div class="welcome-title-1">Navigating the</div>
+		<div class="welcome-title-2">Copyright <br>Claims Board</div>
+		<div class="welcome-subtitle gray">a practical guide for beginners</div>
+		<br>
+
+		<!-- <div class="welcome-rounded-text">Created for the Center for Cultural Information in collaboration with<br> the Juelsgaard Intellectual Property Clinic at Stanford Law School</div> -->
+
+		<!-- <div class="welcome-rounded-text">May 2024</div> -->
+
+		<!-- <div class="welcome-authors">By Caitlin Burke and Kiran Wattamwar</div> -->
+		
+		<div class="row">
+			<div id="cci-website" class="secondary-button"><a href="https://solcenter.work/resource/navigating-the-copyright-claims-board-a-practical-guide-for-creators/">Learn more about the Sol Center</a></div>
+			<div id="cci-website" class="secondary-button"><a href="https://drive.google.com/file/d/1mY3okThVNFFFP9KM0Lj00XcVGvxLBM4g/view">Get the PDF Version</a></div>
+		</div>
+		<br>
+		<div id="enter-guide" class="primary-button">Enter the guide →</div>
+	</div>
+	<div id="overlay" class="welcome-dialog"></div>
 
 	<div id="header">
 		<div><strong>Navigating the Copyright Claims Board</strong><span id="subtitle">, a practical guide for creators</span></div>
@@ -61,31 +80,48 @@
 
 		<div id="content">
 			<div class="section" id="about">
-				<!-- <zero-md src="content/About.md"></zero-md> -->
-				<h2>About</h2>
+				<h2> </h2>
 				<div id="legal-disclaimer" class="box">
 					<div class="box-subtitle">Legal Disclaimer</div>
 					This guide is for informational purposes only and does not constitute legal advice. Its purpose is to provide a general description of CCB and its proceedings, but each factual situation is unique and requires individual consideration. Therefore, please do not act on this legal information as legal guidance; if you have any specific legal problems, issues, or questions, seek review of your situation with a lawyer licensed to practice in your jurisdiction.
 				</div>
 
+				<hr>
+
+				<h4>Foreword</h4>
+
+				<p>The <a href="https://www.cciarts.org/index.html">Center for Cultural Innovation (CCI)</a> was founded in 2001 to help level the playing field for individual artists by providing them with knowledge, networks, and financial tools to strengthen their self-sufficiency and creative independence. Since 2002, we have expanded and evolved our work to include Advocacy and the advancement of efforts that improve the conditions of artists and arts workers.</p>
+
+				<p>CCI approaches its advocacy work through the framework of power, opportunity, and protections. What upstream policy issues can we reimagine to ensure power is equally distributed, especially to those who have historically been disempowered? How can our efforts provide equal opportunities to artists, regardless of their background? And especially in the case of the Guide, how are we guaranteeing artists a sense of protection of their livelihood, culture, and dignity as vital participants in our society? </p>
+
+				<p>With this framing, we are focused not only on passing and reforming policy but also on ensuring its implementation is working as it was intended. The Copyright Claims Board Guide was developed out of this desire: to hold new policy and public resources accountable for what they were designed to do and to center the voices and needs of those they were designed to bring justice to.</p>
+
+				<p>CCI’s work is only possible because of our dedicated community and partnerships. Helping to turn the Guide into a reality were the amazing students and staff of Stanford University’s Juelsgaard Intellectual Property and Innovation Clinic, including:</p>
+				<span class="indented">Phil Malone, <span class="gray">Clinic Director</span></span><br>
+				<span class="indented">Nina Srejovic, <span class="gray">Clinical Supervising Attorney and Lecturer</span></span><br>
+				<span class="indented">Caitlin Cary Burke, <span class="gray">Certified Clinical Law Student</span></span><br>
+				<span class="indented">Kiran Wattamwar, <span class="gray">Certified Clinical Law Student</span></span><br>
+
+				<p>The Guide would also not have been possible without the support of the William & Flora Hewlett Foundation and the Kenneth Rainin Foundation, as well as the hard work and dedication of the CCI team involved in stewarding this partnership:</p>
+				<span class="indented">Laura Poppiti, <span class="gray">Deputy Director</span></span><br>
+				<span class="indented">Jennelyn Tumalad Bailon, <span class="gray">Senior Program Associate</span></span><br>
+				<span class="indented">Jessica Mele, Principal, <span class="gray">Jessica Mele Creative</span></span><br>
+
+				<p>To all who have helped CCI advance the cause of artists, cultural producers, and arts workers, thank you.</p>
+				<br>
+				<div class="signature">
+					<strong>Angie Kim</strong><br>
+					President and CEO,<br>
+					Center for Cultural Innovation
+				</div>
+				<br>
+				<br>
+				<hr>
+
+				<h2>About the guide</h2>
+
 				<p>Maybe you are a creator who feels their work was copied and wants to set things right. Maybe you recently received a claim that you copied someone else’s work. Or maybe you’re just curious about the Copyright Claims Board (CCB). 
 				Regardless of what brought you here, this document is a starting point and a guide for creators. This guide helps you navigate the CCB, but it is not comprehensive, and there will be moments when outside resources are pointed to for additional guidance.</p>
-
-				<!-- It can help you to answer the following questions:  -->
-<!-- 
-				<ul>
-					<li>What is copyright?</li>
-					<li>What is the Copyright Claims Board?</li>
-					<li>Is this CCB right for you?</li>
-					<li>What are the tradeoffs of filing with the CCB?</li>
-					<li>What terminology do you need to know?</li>
-					<li>Are you eligible to bring a claim?</li>
-					<li>What does the claims process look like?</li>
-					<li>What makes a claim strong?</li>
-					<li>Where do claimants typically go wrong?</li>
-					<li>What other special considerations might you have?</li>
-					<li>Support + Resources</li>
-				</ul> -->
 
 				<img src="assets/Meet Characters.svg" alt="Images of three figures asking questions about their intellectual property issues" />
 			</div>
@@ -93,8 +129,6 @@
 			<div class="content-divider"></div>
 
 			<div class="section" id="what-is-copyright">
-				<!-- <zero-md src="content/WhatIsCopyright.md"></zero-md> -->
-
 				<h1>What is copyright?</h1>
 
 				<p>Imagine you spend hours painting a beautiful landscape—after weeks of work, you upload an image of your painting to share with the world in your online portfolio. A few days later, you see a copy of your painting sold as a print on an online marketplace. Have your intellectual property rights been violated?</p>
@@ -148,7 +182,6 @@
 			<div class="content-divider"></div>
 
 			<div class="section"  id="what-is-ccb">
-				<!-- <zero-md src="content/WhatIsCCB.md"></zero-md> -->
 				<h1>What is the Copyright Claims Board (CCB)?</h1>
 
 				<p>In December 2020, the Copyright Alternative in Small-Claims Enforcement Act of 2020 (CASE Act) endowed the Copyright Office with the power to establish the Copyright Claims Board (called the “CCB”) [ ]. The CCB was established by the federal government with the goal of expanding “access to justice” making “the copyright system as understandable and accessible to as many members of the public as possible.” [ ]</p>
@@ -466,7 +499,7 @@
 					</tr>
 					<tr>
 						<td class="claims-table-col-1">
-							You must have exclusive license over at least one right in the work: the right to make copies, the right to prepare other works using this work (“derivative works”), the right to distribute, the right to make copies, the right to publicly perform the work, the right to publicly display the work. 
+							You must have exclusive license over at least one right in the work: the right to make copies, the right to prepare other works using this work (“derivative works”), the right to distribute, the right to publicly perform the work, the right to publicly display the work. 
 						</td>
 						<td class="claims-table-col-2">
 							Did you assign any of these rights to anyone else? It may no longer be exclusive.
@@ -737,6 +770,8 @@
 
 				<p>If you still need help determining whether the CCB is right for you, remember you have resources online to help you. Check out the following for more about the CCB and copyright law:</p>
 				<ul>
+					<li><a href="https://solcenter.work/resource/navigating-the-copyright-claims-board-a-practical-guide-for-creators/">The Sol Center's main page about this project</a></li>
+					<li><a href="https://drive.google.com/file/d/1mY3okThVNFFFP9KM0Lj00XcVGvxLBM4g/view?usp=sharing">The PDF version of this guide</a></li>
 					<li><a href="https://ccb.gov/handbook/">CCB Handbook</a></li>
 					<li><a href="https://www.copyright.gov/what-is-copyright/#:~:text=U.S.%20copyright%20law%20provides%20copyright,rental%2C%20lease%2C%20or%20lending.">US Copyright Office's Website - Primer on Copyright Law </a></li>
 					<li><a href="https://www.copyright.gov/">Copyright Office Homepage</a></li>
