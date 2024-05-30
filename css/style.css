@@ -58,19 +58,19 @@ body {
 
 .welcome-subtitle{
   font-size: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-style: italic;
 }
 
 .welcome-rounded-text{
   border-radius: 500px;
-  border: 1px solid black;
-  color: black;
-  padding: 10px 15px;
-  font-size: 12px;
+/*  border: 1px solid black;*/
+  color: rgba(0,0,0,0.6);
+/*  padding: 10px 15px;*/
+  font-size: 13px;
   width: fit-content;
   max-width: 450px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .welcome-authors {
@@ -88,6 +88,7 @@ body {
 }
 
 .primary-button {
+  margin-top: 10px;
   border-radius: 3px;
   background-color: #134EEA;
   transition: background-color 0.25s ease-out;
@@ -96,7 +97,12 @@ body {
   padding: 10px 8px;
   cursor: pointer;
   width: fit-content;
-  font-size: 16px;
+  font-size: 13px;
+}
+
+.primary-button > a {
+  text-decoration: none;
+  color: white;
 }
 
 .primary-button:hover{
@@ -114,7 +120,7 @@ body {
   padding: 10px 8px;
   cursor: pointer;
   width: fit-content;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .secondary-button:hover{
@@ -124,6 +130,7 @@ body {
 
 .secondary-button > a {
   text-decoration: none;
+  color: #134EEA !important;
 }
 
 /**************/
